@@ -1,8 +1,13 @@
-import { anotherHello } from './anotherHello.js';
-// const msg = require('./say-hello.js');
+// import { anotherHello } from './anotherHello.js';
+const msg = require('./say-hello.js');
 
-// msg();
-anotherHello();
+const $ = require('jquery');
+
+console.log($);
+
+
+msg();
+// anotherHello();
 let sayHello = () => { 
   console.log("hello")
 };
