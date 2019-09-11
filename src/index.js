@@ -1,15 +1,10 @@
-// import jQuery from '../node_modules/jquery/src/jquery.js';
-import niceMsg from 'say-hello.js';
+import { anotherHello } from './anotherHello.js';
+// const msg = require('./say-hello.js');
 
-const $ = require(jQuery); // this does not work
-
-niceMsg();
+// msg();
+anotherHello();
 let sayHello = () => { 
   console.log("hello")
 };
 
 sayHello();
-
-$(document).ready(() => {
-  $(body).css("background", "red");
-})

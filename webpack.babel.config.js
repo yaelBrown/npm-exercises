@@ -15,20 +15,17 @@ module.exports = {
   module: {
     rules: [
       {
-        // anything file that ends with '.js'
-        test: /\.js$/,
-        // except those in "node_modules"
-        exclude: /node_modules/,
-        // transform with babel
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['@babel/preset-env']
           }
         }
       }
     ]
-  },
+  }
 
   // allows us to see how the transpiled js relates to the untranspiled js
   devtool: 'source-map'
